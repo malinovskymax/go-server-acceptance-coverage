@@ -1,0 +1,6 @@
+mode: set
+server/server.go:8.54,10.2 1 1
+server/server.go:12.56,13.43 1 0
+server/server.go:13.43,14.35 1 0
+server/server.go:14.35,16.10 1 0
+server/server.go:20.18,25.2 3 1
