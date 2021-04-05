@@ -4,14 +4,14 @@
 # Getting coverage in acceptance tests
 
 1) Create [special test file](src/server/server_test.go) that brings up your application with timeout long enough to run test suite.
-2) Compile instrumenter binary
+2) Compile instrumented binary
 ```shell
 GOPATH=$HOME/simple-http-server/ go test -c -covermode=set -coverpkg=server -o server.debug server
 ```
 3) Run compiled binary and test suite
 ```shell
 ./server.debug -test.coverprofile=server.cov
-# Do some testing
+# Do some testing on localhost:8090/hello or localhost:8090/headers
 ```
 4) Open coverage report in default browser
 ```shell
