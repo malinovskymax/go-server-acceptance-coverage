@@ -30,9 +30,3 @@ func TestSetver(t *testing.T) {
 	
 	t.Errorf("Exit. Test duration %d seconds", sleepDuration)
 }
-
-// max@max-ubuntu:~/simple-http-server$
-// GOPATH=/home/max/simple-http-server/ go test -c -covermode=set -coverpkg=server -o server.debug server
-// ./server.debug -test.coverprofile=server.cov
-// GOPATH=/home/max/simple-http-server/ go tool cover -html=server.cov -o server-coverage.html
-
